@@ -1,7 +1,5 @@
-import dynamic from 'next/dynamic'
-
-const BasketClient = dynamic(() => import('./BasketClient'), { ssr: false })
+import ClientWrapper from './ClientWrapper'
 
 export default function BasketPage() {
-  return <BasketClient />
+  return <ClientWrapper />
 }
