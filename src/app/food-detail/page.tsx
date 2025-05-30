@@ -49,11 +49,12 @@ export default function FoodDetail() {
       <div className="px-6 py-2">
         <div className="rounded-3xl overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1707056924965-2c687206af67?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/placeholder.svg?height=400&width=600"
             alt="Beef curry"
             width={600}
             height={400}
             className="w-full h-auto"
+            priority
           />
         </div>
       </div>
@@ -76,11 +77,12 @@ export default function FoodDetail() {
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 bg-[#f5f5f5] rounded-lg overflow-hidden">
               <Image
-                src="https://tse4.mm.bing.net/th?id=OIP.ZNfPv_SUZc-itihR0N6lrgHaHv&pid=Api&P=0&h=180"
+                src="/placeholder.svg?height=64&width=64"
                 alt="Mayonnaise"
                 width={64}
                 height={64}
                 className="object-cover"
+                priority
               />
             </div>
             <div>
@@ -110,11 +112,12 @@ export default function FoodDetail() {
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 bg-[#f5f5f5] rounded-lg overflow-hidden">
               <Image
-                src="https://tse3.mm.bing.net/th?id=OIP.2kKEbvE5Gc7ar22I83q0KAHaHa&pid=Api&P=0&h=180"
+                src="/placeholder.svg?height=64&width=64"
                 alt="Salad"
                 width={64}
                 height={64}
                 className="object-cover"
+                priority
               />
             </div>
             <div>
