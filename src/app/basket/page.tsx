@@ -1,5 +1,7 @@
-import ClientWrapper from './ClientWrapper'
+'use client'
+
+import BasketClient from './BasketClient'
 
 export default function BasketPage() {
-  return <ClientWrapper />
+  return <BasketClient />
 }
