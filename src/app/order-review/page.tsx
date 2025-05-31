@@ -4,15 +4,21 @@ import { useState } from "react"
 import { ArrowLeft, Edit, Minus, Plus, ChevronRight } from "lucide-react"
 import Image from "next/image"
 
+type MenuItem = 'alfaham' | 'beefcurry' | 'mayonnaise' | 'salad'
+
+type Quantities = {
+  [key in MenuItem]: number
+}
+
 export default function OrderReview() {
-  const [quantities, setQuantities] = useState({
+  const [quantities, setQuantities] = useState<Quantities>({
     alfaham: 2,
     beefcurry: 1,
     mayonnaise: 2,
     salad: 1,
   })
 
-  const updateQuantity = (item: string, change: number) => {
+  const updateQuantity = (item: MenuItem, change: number) => {
     setQuantities((prev) => ({
       ...prev,
       [item]: Math.max(0, prev[item] + change),

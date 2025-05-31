@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { Playfair_Display } from 'next/font/google'
 import { IoCartSharp } from "react-icons/io5";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import SkeletonLoader from './components/SkeletonLoader';
 
 const playfair = Playfair_Display({

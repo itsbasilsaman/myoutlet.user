@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronLeft, Minus, Plus } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function FoodDetail() {
   const [mayoCount, setMayoCount] = useState(2)
@@ -37,9 +38,9 @@ export default function FoodDetail() {
 
       {/* Back Button */}
       <div className="px-6 py-2">
-        <button className="w-14 h-14 rounded-full flex items-center justify-center border border-[#dadada]">
+        <Link href="/" className="w-14 h-14 rounded-full flex items-center justify-center border border-[#dadada]">
           <ChevronLeft size={24} className="text-black" />
-        </button>
+        </Link>
       </div>
 
       {/* Food Title and Rating */}
